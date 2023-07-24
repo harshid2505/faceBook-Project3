@@ -13,25 +13,22 @@ import FirebaseCore
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var te: UITextField!
-    @IBOutlet weak var t2: UITextField!
-    @IBOutlet weak var t3: UITextField!
+    @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var createNewButton: UIButton!
     
     var refa: Firestore!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        buttonSape()
         refa = Firestore.firestore()
     }
-
-    @IBAction func buttonAction(_ sender: Any) {
-       add()
-    }
     
-    func add(){
-        refa.collection("Student").addDocument(data: ["ID":te.text!,"Name":t2.text!,"Gr":t3.text!])
+    func buttonSape(){
+        logInButton.layer.cornerRadius = 22
+        createNewButton.layer.borderWidth = 1.5
+        createNewButton.layer.borderColor = UIColor.lightGray.cgColor
+        createNewButton.layer.cornerRadius = 18
     }
     
 }
