@@ -133,7 +133,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwe-BD-2ew">
-                                <rect key="frame" x="16" y="69" width="28" height="33"/>
+                                <rect key="frame" x="0.0" y="69" width="44" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="Lms-EZ-daO"/>
                                 </constraints>
@@ -173,7 +173,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyz-Tl-NRQ">
-                                <rect key="frame" x="60" y="793" width="272" height="35"/>
+                                <rect key="frame" x="60" y="765" width="272" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="T5o-Uc-gyA"/>
                                 </constraints>
@@ -187,7 +187,7 @@
                         <viewLayoutGuide key="safeArea" id="4DZ-l6-5LD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Iyz-Tl-NRQ" firstAttribute="top" secondItem="tDd-jq-xg0" secondAttribute="bottom" constant="253" id="5cB-hv-M5Z"/>
+                            <constraint firstItem="Iyz-Tl-NRQ" firstAttribute="top" secondItem="tDd-jq-xg0" secondAttribute="bottom" constant="225" id="5cB-hv-M5Z"/>
                             <constraint firstItem="w5e-vy-fmz" firstAttribute="top" secondItem="RON-1Y-t4v" secondAttribute="bottom" constant="16" id="65W-YX-nkQ"/>
                             <constraint firstItem="4DZ-l6-5LD" firstAttribute="trailing" secondItem="Iyz-Tl-NRQ" secondAttribute="trailing" constant="61" id="AEe-Du-nJk"/>
                             <constraint firstItem="4DZ-l6-5LD" firstAttribute="trailing" secondItem="RON-1Y-t4v" secondAttribute="trailing" constant="16" id="BS0-bq-bQF"/>
@@ -195,7 +195,7 @@
                             <constraint firstItem="Pwe-BD-2ew" firstAttribute="top" secondItem="4DZ-l6-5LD" secondAttribute="top" constant="10" id="Ff7-NY-YqJ"/>
                             <constraint firstItem="4DZ-l6-5LD" firstAttribute="trailing" secondItem="98g-Tj-g8f" secondAttribute="trailing" constant="16" id="Ia1-q0-HoT"/>
                             <constraint firstItem="RON-1Y-t4v" firstAttribute="top" secondItem="98g-Tj-g8f" secondAttribute="bottom" constant="21" id="KFI-o2-OS1"/>
-                            <constraint firstItem="Pwe-BD-2ew" firstAttribute="leading" secondItem="4DZ-l6-5LD" secondAttribute="leading" constant="16" id="MNM-KP-o9v"/>
+                            <constraint firstItem="Pwe-BD-2ew" firstAttribute="leading" secondItem="4DZ-l6-5LD" secondAttribute="leading" id="MNM-KP-o9v"/>
                             <constraint firstItem="4DZ-l6-5LD" firstAttribute="trailing" secondItem="tDd-jq-xg0" secondAttribute="trailing" constant="16" id="Plm-Lg-Zia"/>
                             <constraint firstItem="4DZ-l6-5LD" firstAttribute="trailing" secondItem="w5e-vy-fmz" secondAttribute="trailing" constant="16" id="RQ9-US-RmP"/>
                             <constraint firstItem="w5e-vy-fmz" firstAttribute="leading" secondItem="4DZ-l6-5LD" secondAttribute="leading" constant="16" id="UXS-O8-1Xt"/>
@@ -208,7 +208,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="getStartedButton" destination="tDd-jq-xg0" id="sRQ-qR-TZY"/>
+                        <outlet property="getStartedButton" destination="tDd-jq-xg0" id="H8Y-fe-7H1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4F-oI-Qt5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
