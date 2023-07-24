@@ -27,9 +27,16 @@ class ViewController: UIViewController {
     func buttonSape(){
         logInButton.layer.cornerRadius = 22
         createNewButton.layer.borderWidth = 1.5
-        createNewButton.layer.borderColor = UIColor.lightGray.cgColor
+        createNewButton.layer.borderColor = UIColor.tintColor.cgColor
         createNewButton.layer.cornerRadius = 18
     }
+    func naviget(){
+        let navigation = storyboard?.instantiateViewController(withIdentifier: "JoinFacebook") as! JoinFacebook
+        navigationController?.pushViewController(navigation, animated: true)
+    }
     
+    @IBAction func crateNewButtonAction(_ sender: Any) {
+        naviget()
+    }
 }
 
