@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		654F1BD32A6E6C9A00B84335 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 654F1BD22A6E6C9A00B84335 /* GoogleService-Info.plist */; };
 		65B1DE712A6CEE540076A401 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1DE702A6CEE540076A401 /* AppDelegate.swift */; };
 		65B1DE732A6CEE540076A401 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1DE722A6CEE540076A401 /* SceneDelegate.swift */; };
 		65B1DE752A6CEE540076A401 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1DE742A6CEE540076A401 /* ViewController.swift */; };
 		65B1DE782A6CEE540076A401 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B1DE762A6CEE540076A401 /* Main.storyboard */; };
 		65B1DE7A2A6CEE540076A401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B1DE792A6CEE540076A401 /* Assets.xcassets */; };
 		65B1DE7D2A6CEE540076A401 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B1DE7B2A6CEE540076A401 /* LaunchScreen.storyboard */; };
+		DA748434D72637615D699F33 /* Pods_faceBook_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B152393A0F95763874CDA6D /* Pods_faceBook_Project.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B152393A0F95763874CDA6D /* Pods_faceBook_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_faceBook_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53DB3E327C1BD0C44CA10455 /* Pods-faceBook Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceBook Project.debug.xcconfig"; path = "Target Support Files/Pods-faceBook Project/Pods-faceBook Project.debug.xcconfig"; sourceTree = "<group>"; };
+		654F1BD22A6E6C9A00B84335 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		65B1DE6D2A6CEE540076A401 /* faceBook Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "faceBook Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B1DE702A6CEE540076A401 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65B1DE722A6CEE540076A401 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		65B1DE792A6CEE540076A401 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65B1DE7C2A6CEE540076A401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65B1DE7E2A6CEE540076A401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E78F70190FD7454B30818B75 /* Pods-faceBook Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceBook Project.release.xcconfig"; path = "Target Support Files/Pods-faceBook Project/Pods-faceBook Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA748434D72637615D699F33 /* Pods_faceBook_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AE277FBFA58F1F2B7FB2D7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53DB3E327C1BD0C44CA10455 /* Pods-faceBook Project.debug.xcconfig */,
+				E78F70190FD7454B30818B75 /* Pods-faceBook Project.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		65B1DE642A6CEE540076A401 = {
 			isa = PBXGroup;
 			children = (
 				65B1DE6F2A6CEE540076A401 /* faceBook Project */,
 				65B1DE6E2A6CEE540076A401 /* Products */,
+				2AE277FBFA58F1F2B7FB2D7E /* Pods */,
+				F6258E4418DE3AB7EC232D40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +81,17 @@
 				65B1DE792A6CEE540076A401 /* Assets.xcassets */,
 				65B1DE7B2A6CEE540076A401 /* LaunchScreen.storyboard */,
 				65B1DE7E2A6CEE540076A401 /* Info.plist */,
+				654F1BD22A6E6C9A00B84335 /* GoogleService-Info.plist */,
 			);
 			path = "faceBook Project";
+			sourceTree = "<group>";
+		};
+		F6258E4418DE3AB7EC232D40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B152393A0F95763874CDA6D /* Pods_faceBook_Project.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65B1DE812A6CEE540076A401 /* Build configuration list for PBXNativeTarget "faceBook Project" */;
 			buildPhases = (
+				FF5A8471BDC9B931C80A6253 /* [CP] Check Pods Manifest.lock */,
 				65B1DE692A6CEE540076A401 /* Sources */,
 				65B1DE6A2A6CEE540076A401 /* Frameworks */,
 				65B1DE6B2A6CEE540076A401 /* Resources */,
+				F2C2453DBD7468D30FC3E952 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				65B1DE7D2A6CEE540076A401 /* LaunchScreen.storyboard in Resources */,
+				654F1BD32A6E6C9A00B84335 /* GoogleService-Info.plist in Resources */,
 				65B1DE7A2A6CEE540076A401 /* Assets.xcassets in Resources */,
 				65B1DE782A6CEE540076A401 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F2C2453DBD7468D30FC3E952 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-faceBook Project/Pods-faceBook Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-faceBook Project/Pods-faceBook Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-faceBook Project/Pods-faceBook Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF5A8471BDC9B931C80A6253 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-faceBook Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65B1DE692A6CEE540076A401 /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		65B1DE822A6CEE540076A401 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53DB3E327C1BD0C44CA10455 /* Pods-faceBook Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +383,7 @@
 		};
 		65B1DE832A6CEE540076A401 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E78F70190FD7454B30818B75 /* Pods-faceBook Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
