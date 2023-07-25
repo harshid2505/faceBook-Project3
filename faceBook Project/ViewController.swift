@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  faceBook Project
-//
-//  Created by HARSHID PATEL on 23/07/23.
-//
-
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
@@ -17,26 +10,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var createNewButton: UIButton!
     
     var refa: Firestore!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        buttonSape()
+        setLogInButton()
         refa = Firestore.firestore()
     }
     
-    func buttonSape(){
+    func setLogInButton(){
         logInButton.layer.cornerRadius = 22
         createNewButton.layer.borderWidth = 1.5
         createNewButton.layer.borderColor = UIColor.tintColor.cgColor
         createNewButton.layer.cornerRadius = 18
     }
-    func naviget(){
+    func createNewAccountNavigation(){
         let navigation = storyboard?.instantiateViewController(withIdentifier: "JoinFacebook") as! JoinFacebook
         navigationController?.pushViewController(navigation, animated: true)
     }
     
     @IBAction func crateNewButtonAction(_ sender: Any) {
-        naviget()
+        createNewAccountNavigation()
     }
 }
 
