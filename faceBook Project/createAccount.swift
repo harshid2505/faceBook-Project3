@@ -15,6 +15,8 @@ setNextButton()
     }
     
     @IBAction func nextButtonAction(_ sender: UIButton) {
+        let navigation = storyboard?.instantiateViewController(withIdentifier: "dateOfBirth") as! dateOfBirth
+        navigationController?.pushViewController(navigation, animated: true)
     }
     
     @IBAction func AlreadyHaveAnAccountButtonAction(_ sender: Any) {
