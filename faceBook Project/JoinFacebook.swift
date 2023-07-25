@@ -18,7 +18,12 @@ class JoinFacebook: UIViewController {
             navigationController?.popViewController(animated: true)
     }
     @IBAction func getStartedButtonAction(_ sender: Any) {
+        let navigation = storyboard?.instantiateViewController(withIdentifier: "createAccount") as! createAccount
+        navigationController?.pushViewController(navigation, animated: true)
+        
     }
-    @IBAction func acButtonAction(_ sender: Any) {
+    @IBAction func AlreadyHaveAnAccountButtonAction(_ sender: Any) {
+        let navigation = storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        navigationController?.popViewController(animated: true)
     }
 }
