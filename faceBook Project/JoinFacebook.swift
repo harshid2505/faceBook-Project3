@@ -10,7 +10,7 @@ class JoinFacebook: UIViewController {
         setGetStartedButton()
     }
     func setGetStartedButton(){
-        getStartedButton.layer.cornerRadius = 25
+        getStartedButton.layer.cornerRadius = 20
     }
 
     @IBAction func backButtonAction(_ sender: Any) {

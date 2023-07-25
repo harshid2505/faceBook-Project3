@@ -11,7 +11,7 @@ class createAccount: UIViewController {
 setNextButton()
     }
     func setNextButton(){
-        nextButton.layer.cornerRadius = 25
+        nextButton.layer.cornerRadius = 20
     }
     
     @IBAction func nextButtonAction(_ sender: UIButton) {
