@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491A5DB02A6F8A100005539D /* createAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A5DAF2A6F8A100005539D /* createAccount.swift */; };
 		498342892A6EE4F000C6413F /* JoinFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498342882A6EE4F000C6413F /* JoinFacebook.swift */; };
 		654F1BD32A6E6C9A00B84335 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 654F1BD22A6E6C9A00B84335 /* GoogleService-Info.plist */; };
 		65B1DE712A6CEE540076A401 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1DE702A6CEE540076A401 /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		491A5DAF2A6F8A100005539D /* createAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccount.swift; sourceTree = "<group>"; };
 		498342882A6EE4F000C6413F /* JoinFacebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinFacebook.swift; sourceTree = "<group>"; };
 		4B152393A0F95763874CDA6D /* Pods_faceBook_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_faceBook_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53DB3E327C1BD0C44CA10455 /* Pods-faceBook Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceBook Project.debug.xcconfig"; path = "Target Support Files/Pods-faceBook Project/Pods-faceBook Project.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				65B1DE722A6CEE540076A401 /* SceneDelegate.swift */,
 				65B1DE742A6CEE540076A401 /* ViewController.swift */,
 				65B1DE762A6CEE540076A401 /* Main.storyboard */,
+				491A5DAF2A6F8A100005539D /* createAccount.swift */,
 				498342882A6EE4F000C6413F /* JoinFacebook.swift */,
 				65B1DE792A6CEE540076A401 /* Assets.xcassets */,
 				65B1DE7B2A6CEE540076A401 /* LaunchScreen.storyboard */,
@@ -215,6 +218,7 @@
 			files = (
 				65B1DE752A6CEE540076A401 /* ViewController.swift in Sources */,
 				65B1DE712A6CEE540076A401 /* AppDelegate.swift in Sources */,
+				491A5DB02A6F8A100005539D /* createAccount.swift in Sources */,
 				65B1DE732A6CEE540076A401 /* SceneDelegate.swift in Sources */,
 				498342892A6EE4F000C6413F /* JoinFacebook.swift in Sources */,
 			);
