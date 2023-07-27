@@ -23,7 +23,7 @@ class createPassword: UIViewController {
         nextButton.layer.cornerRadius = 20
     }
     func backButtonNavigation(){
-        let navigation = storyboard?.instantiateViewController(withIdentifier: "JoinFacebook") as! JoinFacebook
+        let navigation = storyboard?.instantiateViewController(withIdentifier: "signupWithEmail") as! signupWithEmail
         navigationController?.popViewController(animated: true)
     }
     func alreadyHaveAnAccount(){
