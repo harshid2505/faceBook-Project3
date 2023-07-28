@@ -825,7 +825,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We'll save the login info for xyz, so you won't need to enter it next time you log in." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sx2-TW-v7P">
-                                <rect key="frame" x="16" y="161" width="361" height="65"/>
+                                <rect key="frame" x="16" y="156" width="361" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="0Xl-za-1hU"/>
                                 </constraints>
@@ -834,20 +834,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gum-P6-oeM">
-                                <rect key="frame" x="16" y="291" width="361" height="45"/>
+                                <rect key="frame" x="16" y="236" width="361" height="45"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="rzC-a1-Wuu"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
                                 <connections>
-                                    <action selector="nextButtonAction:" destination="uVU-fY-pbB" eventType="touchUpInside" id="w99-Xi-Uh1"/>
+                                    <action selector="saveButtonAction:" destination="uVU-fY-pbB" eventType="touchUpInside" id="w99-Xi-Uh1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQN-T7-7sD">
-                                <rect key="frame" x="16" y="352" width="361" height="45"/>
+                                <rect key="frame" x="16" y="297" width="361" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Fbw-Kj-5QN"/>
@@ -874,7 +874,7 @@
                         <viewLayoutGuide key="safeArea" id="4PL-vM-Wcc"/>
                         <color key="backgroundColor" red="0.96115852589999995" green="0.95294117649999999" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="sx2-TW-v7P" firstAttribute="top" secondItem="CZq-MU-AB2" secondAttribute="bottom" constant="10" id="2eD-wF-Fr5"/>
+                            <constraint firstItem="sx2-TW-v7P" firstAttribute="top" secondItem="CZq-MU-AB2" secondAttribute="bottom" constant="5" id="2eD-wF-Fr5"/>
                             <constraint firstItem="pQN-T7-7sD" firstAttribute="top" secondItem="Gum-P6-oeM" secondAttribute="bottom" constant="16" id="3Nf-kG-PpV"/>
                             <constraint firstItem="pQN-T7-7sD" firstAttribute="leading" secondItem="4PL-vM-Wcc" secondAttribute="leading" constant="16" id="7P5-v3-mBF"/>
                             <constraint firstItem="Gum-P6-oeM" firstAttribute="leading" secondItem="4PL-vM-Wcc" secondAttribute="leading" constant="16" id="BPW-hv-ba3"/>
@@ -886,7 +886,7 @@
                             <constraint firstItem="4PL-vM-Wcc" firstAttribute="trailing" secondItem="m3r-sj-H2R" secondAttribute="trailing" constant="60" id="PCn-0o-hBa"/>
                             <constraint firstItem="TWo-7O-O3D" firstAttribute="top" secondItem="4PL-vM-Wcc" secondAttribute="top" constant="12" id="QhK-Y6-Tbp"/>
                             <constraint firstItem="4PL-vM-Wcc" firstAttribute="trailing" secondItem="TWo-7O-O3D" secondAttribute="trailing" constant="352" id="Vhg-cC-Be2"/>
-                            <constraint firstItem="Gum-P6-oeM" firstAttribute="top" secondItem="sx2-TW-v7P" secondAttribute="bottom" constant="65" id="fre-5E-TPj"/>
+                            <constraint firstItem="Gum-P6-oeM" firstAttribute="top" secondItem="sx2-TW-v7P" secondAttribute="bottom" constant="15" id="fre-5E-TPj"/>
                             <constraint firstItem="CZq-MU-AB2" firstAttribute="top" secondItem="TWo-7O-O3D" secondAttribute="bottom" constant="25" id="hGR-PH-wEd"/>
                             <constraint firstItem="m3r-sj-H2R" firstAttribute="leading" secondItem="4PL-vM-Wcc" secondAttribute="leading" constant="60" id="nFx-Wz-2U3"/>
                             <constraint firstItem="CZq-MU-AB2" firstAttribute="leading" secondItem="4PL-vM-Wcc" secondAttribute="leading" constant="16" id="p2H-IO-3cB"/>
@@ -895,8 +895,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="nextButton" destination="Gum-P6-oeM" id="BBD-bf-e1b"/>
                         <outlet property="notNowButton" destination="pQN-T7-7sD" id="27n-0S-n6E"/>
+                        <outlet property="saveButton" destination="Gum-P6-oeM" id="BBD-bf-e1b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CeY-om-gwU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

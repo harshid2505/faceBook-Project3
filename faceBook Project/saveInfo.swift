@@ -2,7 +2,7 @@ import UIKit
 
 class saveInfo: UIViewController {
     
-    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var notNowButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -10,7 +10,7 @@ class saveInfo: UIViewController {
         setNotNowButton()
     }
     func setNextButton(){
-        nextButton.layer.cornerRadius = 20
+        saveButton.layer.cornerRadius = 20
     }
     func setNotNowButton(){
         notNowButton.layer.cornerRadius = 20
@@ -31,7 +31,7 @@ class saveInfo: UIViewController {
     @IBAction func backButtonAction(_ sender: Any) {
         backButtonNavigation()
     }
-    @IBAction func nextButtonAction(_ sender: Any) {
+    @IBAction func saveButtonAction(_ sender: Any) {
         nextButtonnavigation()
     }
     @IBAction func notNowButtonAction(_ sender: Any) {
