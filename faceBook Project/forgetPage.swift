@@ -15,7 +15,7 @@ class forgetPage: UIViewController {
     @IBOutlet weak var mobilLb: UILabel!
     
     var change = 0
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,9 +34,9 @@ class forgetPage: UIViewController {
             mobileTextField.placeholder = "Mobile number"
             searchButton.setTitle("Search by email instead", for: .normal)
             mobilLb.text = "Enter your mobile number."
-           change = 0
+            change = 0
         }
-
+        
     }
     
     @IBAction func backButtonAction(_ sender: UIButton) {
@@ -46,8 +46,5 @@ class forgetPage: UIViewController {
     }
     
     
-    @IBAction func alreadyAccountButtonAction(_ sender: UIButton) {
-        
-    }
     
 }
