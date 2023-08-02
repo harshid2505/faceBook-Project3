@@ -23,18 +23,15 @@ class ViewController: UIViewController {
         createNewButton.layer.borderColor = UIColor.tintColor.cgColor
         createNewButton.layer.cornerRadius = 18
     }
-    func createNewAccountNavigation(){
+    
+    @IBAction func crateNewButtonAction(_ sender: Any) {
         let navigation = storyboard?.instantiateViewController(withIdentifier: "JoinFacebook") as! JoinFacebook
         navigationController?.pushViewController(navigation, animated: true)
     }
     
-    @IBAction func crateNewButtonAction(_ sender: Any) {
-        createNewAccountNavigation()
-    }
-    
-    @IBAction func forgotPasswordButtonAction(_ sender: UIButton) {
-        let navigation = storyboard?.instantiateViewController(withIdentifier: "forgetPage") as! forgetPage
-        navigationController?.pushViewController(navigation, animated: true)
+    @IBAction func forgotPasswordButtonActio(_ sender: UIButton) {
+        let navigate = storyboard?.instantiateViewController(withIdentifier: "forgetPage") as! forgetPage
+        navigationController?.pushViewController(navigate, animated: true)
     }
     
 }

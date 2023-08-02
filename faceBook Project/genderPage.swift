@@ -35,6 +35,10 @@ class genderPage: UIViewController {
         
     }
     
+    @IBAction func backButtonAction(_ sender: UIButton) {
+        let navigate = storyboard?.instantiateViewController(withIdentifier: "dateOfBirth") as! dateOfBirth
+        navigationController?.popViewController(animated: true)
+    }
 }
 
 //TABLE VIEW

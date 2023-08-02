@@ -58,7 +58,7 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="17"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="forgotPasswordButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X08-r7-Z1R"/>
+                                    <action selector="forgotPasswordButtonActio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jeF-GD-Ixb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPb-qG-O3Y">
@@ -376,7 +376,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
                                 <connections>
-                                    <action selector="backButtonAction:" destination="4Zl-t1-3st" eventType="touchUpInside" id="FHW-RE-p2Z"/>
                                     <action selector="backButtonAction:" destination="0bi-fd-nLq" eventType="touchUpInside" id="HBh-5j-73p"/>
                                 </connections>
                             </button>
@@ -573,8 +572,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
                                 <connections>
-                                    <action selector="backButtonAction:" destination="0bi-fd-nLq" eventType="touchUpInside" id="Bbf-iN-RxX"/>
-                                    <action selector="backButtonAction:" destination="4Zl-t1-3st" eventType="touchUpInside" id="zcD-J5-fB6"/>
+                                    <action selector="backButtonAction:" destination="vY2-Es-bp5" eventType="touchUpInside" id="SAG-aJ-whK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your gender?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjQ-ms-V8W">
@@ -620,7 +618,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pOq-Ii-whm">
-                                                    <rect key="frame" x="326" y="16" width="26" height="31.999999999999986"/>
+                                                    <rect key="frame" x="326" y="15.999999999999998" width="26" height="31.999999999999986"/>
                                                     <color key="tintColor" systemColor="systemGrayColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="33.329999999999998" id="ITi-ji-8Q5"/>
@@ -724,8 +722,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
                                 <connections>
-                                    <action selector="backButtonAction:" destination="7G2-xm-1LY" eventType="touchUpInside" id="7br-mG-SXN"/>
-                                    <action selector="backButtonAction:" destination="KSz-xN-z7Q" eventType="touchUpInside" id="LJr-B7-vuv"/>
+                                    <action selector="backButtonAction:" destination="7G2-xm-1LY" eventType="touchUpInside" id="jV5-ff-9ui"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find your account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXK-MS-b4M">
@@ -764,6 +761,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Find account"/>
+                                <connections>
+                                    <action selector="findAccountButtonAction:" destination="7G2-xm-1LY" eventType="touchUpInside" id="IlC-b6-xYT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0c-Xn-7M8">
                                 <rect key="frame" x="16" y="326" width="361" height="45"/>
@@ -776,7 +776,7 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="searchButtonAction:" destination="7G2-xm-1LY" eventType="touchUpInside" id="40e-V2-cZx"/>
+                                    <action selector="searchButtonAction:" destination="7G2-xm-1LY" eventType="touchUpInside" id="bKN-xn-URU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CpE-6Q-1v7">
@@ -787,8 +787,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Already have an account?"/>
                                 <connections>
-                                    <action selector="AlreadyHaveAnAccountButtonAction:" destination="4Zl-t1-3st" eventType="touchUpInside" id="TwM-qz-xtC"/>
-                                    <action selector="alreadyAccountButtonAction:" destination="7G2-xm-1LY" eventType="touchUpInside" id="iQj-md-EX6"/>
+                                    <action selector="alreadyAccountButtonAction:" destination="7G2-xm-1LY" eventType="touchUpInside" id="rTo-0X-Cky"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -816,10 +815,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="findAccountButton" destination="QwR-03-zW2" id="8SH-fI-XfB"/>
-                        <outlet property="mobilLb" destination="SDf-pV-WOI" id="5oO-fe-bSt"/>
-                        <outlet property="mobileTextField" destination="mdg-m4-ThP" id="FXI-7d-ok4"/>
-                        <outlet property="searchButton" destination="K0c-Xn-7M8" id="EXZ-nA-giN"/>
+                        <outlet property="findAccountButton" destination="QwR-03-zW2" id="ah3-RX-3kZ"/>
+                        <outlet property="mobileLb" destination="SDf-pV-WOI" id="BMM-Yg-cXb"/>
+                        <outlet property="mobileTextField" destination="mdg-m4-ThP" id="iuu-ON-Imo"/>
+                        <outlet property="searchButton" destination="K0c-Xn-7M8" id="bEM-mJ-EeY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GsK-hr-UUe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -914,9 +913,6 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Already have an account?"/>
-                                <connections>
-                                    <action selector="AlreadyHaveAnAccountButtonAction:" destination="4Zl-t1-3st" eventType="touchUpInside" id="OJT-Oq-rsT"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ghB-f7-XyN"/>
@@ -1047,9 +1043,6 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Already have an account?"/>
-                                <connections>
-                                    <action selector="AlreadyHaveAnAccountButtonAction:" destination="4Zl-t1-3st" eventType="touchUpInside" id="yLo-Rz-Ljk"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lcs-x5-hBt"/>
@@ -1230,7 +1223,6 @@
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
                                 <connections>
                                     <action selector="backButtonAction:" destination="uVU-fY-pbB" eventType="touchUpInside" id="R1A-t5-zID"/>
-                                    <action selector="backButtonAction:" destination="fVE-cX-Ou4" eventType="touchUpInside" id="yOF-ON-BfL"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save your login info?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZq-MU-AB2">
@@ -1340,7 +1332,6 @@
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
                                 <connections>
                                     <action selector="backButtonAction:" destination="Mgp-eR-HU1" eventType="touchUpInside" id="Yhk-YI-DXy"/>
-                                    <action selector="backButtonAction:" destination="fVE-cX-Ou4" eventType="touchUpInside" id="uSa-JH-q1d"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By tapping I agree, you agree to create an account and to Facebook's terms, Privacy Policy and Cookies Policy." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWc-Ve-Kbw">
