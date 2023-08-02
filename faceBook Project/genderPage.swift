@@ -23,9 +23,12 @@ class genderPage: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+    func nextButtonNavigation(){
+        let navigation = storyboard?.instantiateViewController(withIdentifier: "mobileNumber") as! mobileNumber
+        navigationController?.pushViewController(navigation, animated: true)
+    }
     @IBAction func nextButtonAction(_ sender: UIButton) {
-        
+        nextButtonNavigation()
     }
     
     @IBAction func alreadyAccountButtonAction(_ sender: UIButton) {

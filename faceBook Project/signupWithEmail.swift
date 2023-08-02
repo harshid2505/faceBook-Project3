@@ -22,7 +22,8 @@ class signupWithEmail: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     func nextButtonNavigation(){
-        
+        let navigation = storyboard?.instantiateViewController(withIdentifier: "createPassword") as! createPassword
+        navigationController?.popViewController(animated: true)
     }
     func signupWithMobileNumberButtonNavigation(){
         let navigation = storyboard?.instantiateViewController(withIdentifier: "mobileNumber") as! mobileNumber
