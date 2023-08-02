@@ -1432,6 +1432,111 @@
             </objects>
             <point key="canvasLocation" x="4354.9618320610689" y="676.76056338028172"/>
         </scene>
+        <!--Save Login Info Page-->
+        <scene sceneID="3fB-VO-eLa">
+            <objects>
+                <viewController storyboardIdentifier="saveLoginInfoPage" id="NcX-YB-UuA" customClass="saveLoginInfoPage" customModule="faceBook_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ByH-9K-HFe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iw2-LX-3c0">
+                                <rect key="frame" x="16" y="71" width="25" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="PGx-Cq-lcL"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="Mgp-eR-HU1" eventType="touchUpInside" id="VJo-k0-j8G"/>
+                                    <action selector="backButtonAction:" destination="NcX-YB-UuA" eventType="touchUpInside" id="pJQ-WG-rd0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save your login info?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgf-Ss-TIu">
+                                <rect key="frame" x="16" y="121" width="361" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="j4U-va-xhC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We'll save the login info for xyz, so you won't need to enter it next time you log in." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nq7-sx-tSn">
+                                <rect key="frame" x="16" y="161" width="361" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="RTH-10-yCv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DD-hF-5WR">
+                                <rect key="frame" x="16" y="698" width="361" height="45"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Jgb-61-oFW"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonAction:" destination="NcX-YB-UuA" eventType="touchUpInside" id="ugT-r5-Oen"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCX-Nb-CId">
+                                <rect key="frame" x="16" y="753" width="361" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="SFn-fN-IlF"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Not Now"/>
+                                <connections>
+                                    <action selector="notNowButtonAction:" destination="NcX-YB-UuA" eventType="touchUpInside" id="EDu-HD-eN0"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account" translatesAutoresizingMaskIntoConstraints="NO" id="7W4-ju-uFQ">
+                                <rect key="frame" x="76" y="264" width="240" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="235" id="Ps8-Ti-NkF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hQG-6w-a70"/>
+                        <color key="backgroundColor" red="0.96470588450000005" green="0.9529411793" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hQG-6w-a70" firstAttribute="trailing" secondItem="JCX-Nb-CId" secondAttribute="trailing" constant="16" id="6l2-4a-FVa"/>
+                            <constraint firstItem="hQG-6w-a70" firstAttribute="trailing" secondItem="6DD-hF-5WR" secondAttribute="trailing" constant="16" id="9xi-GK-0OV"/>
+                            <constraint firstItem="7W4-ju-uFQ" firstAttribute="leading" secondItem="hQG-6w-a70" secondAttribute="leading" constant="76" id="BuC-UD-YJR"/>
+                            <constraint firstItem="hQG-6w-a70" firstAttribute="trailing" secondItem="Nq7-sx-tSn" secondAttribute="trailing" constant="16" id="FVv-1L-ame"/>
+                            <constraint firstItem="wgf-Ss-TIu" firstAttribute="top" secondItem="iw2-LX-3c0" secondAttribute="bottom" constant="25" id="HJV-3h-XbH"/>
+                            <constraint firstItem="JCX-Nb-CId" firstAttribute="leading" secondItem="hQG-6w-a70" secondAttribute="leading" constant="16" id="Jxh-eW-IJz"/>
+                            <constraint firstItem="Nq7-sx-tSn" firstAttribute="top" secondItem="wgf-Ss-TIu" secondAttribute="bottom" constant="10" id="Kar-Vi-qTZ"/>
+                            <constraint firstItem="6DD-hF-5WR" firstAttribute="leading" secondItem="hQG-6w-a70" secondAttribute="leading" constant="16" id="RGz-Vp-4Zk"/>
+                            <constraint firstItem="Nq7-sx-tSn" firstAttribute="leading" secondItem="hQG-6w-a70" secondAttribute="leading" constant="16" id="ZlH-o2-aFy"/>
+                            <constraint firstItem="7W4-ju-uFQ" firstAttribute="top" secondItem="Nq7-sx-tSn" secondAttribute="bottom" constant="38" id="c6x-WA-467"/>
+                            <constraint firstItem="iw2-LX-3c0" firstAttribute="top" secondItem="hQG-6w-a70" secondAttribute="top" constant="12" id="gD5-AH-gsE"/>
+                            <constraint firstItem="JCX-Nb-CId" firstAttribute="top" secondItem="6DD-hF-5WR" secondAttribute="bottom" constant="10" id="glA-If-adk"/>
+                            <constraint firstItem="iw2-LX-3c0" firstAttribute="leading" secondItem="hQG-6w-a70" secondAttribute="leading" constant="16" id="hwU-7Q-QYf"/>
+                            <constraint firstItem="hQG-6w-a70" firstAttribute="trailing" secondItem="7W4-ju-uFQ" secondAttribute="trailing" constant="77" id="ic5-NO-wxy"/>
+                            <constraint firstItem="hQG-6w-a70" firstAttribute="trailing" secondItem="iw2-LX-3c0" secondAttribute="trailing" constant="352" id="kZn-QI-C3w"/>
+                            <constraint firstItem="hQG-6w-a70" firstAttribute="bottom" secondItem="JCX-Nb-CId" secondAttribute="bottom" constant="20" id="lhS-eh-dhu"/>
+                            <constraint firstItem="hQG-6w-a70" firstAttribute="trailing" secondItem="wgf-Ss-TIu" secondAttribute="trailing" constant="16" id="nYe-Md-Red"/>
+                            <constraint firstItem="wgf-Ss-TIu" firstAttribute="leading" secondItem="hQG-6w-a70" secondAttribute="leading" constant="16" id="oPk-ps-rpV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="notNowbutton" destination="JCX-Nb-CId" id="ohl-oK-VkW"/>
+                        <outlet property="saveButton" destination="6DD-hF-5WR" id="1Wq-9Q-j3d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qYm-vd-Qf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5075.5725190839694" y="676.76056338028172"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="3sj-bR-mA1">
             <objects>
@@ -1451,6 +1556,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="account" width="512" height="512"/>
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
         <image name="circle" catalog="system" width="128" height="123"/>
         <image name="facebook sign up" width="650" height="313"/>
