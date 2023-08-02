@@ -394,11 +394,17 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Why do I need to provide my date of birth?"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TRM-DM-aMF">
-                                <rect key="frame" x="148" y="338" width="97" height="34"/>
+                                <rect key="frame" x="16" y="338" width="361" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbz-KH-fDC">
+                                <rect key="frame" x="159" y="467" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0hO-Eq-vqF"/>
                         <color key="backgroundColor" red="0.96470588450000005" green="0.9529411793" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
