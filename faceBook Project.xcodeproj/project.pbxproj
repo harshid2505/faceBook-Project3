@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		491A5DB02A6F8A100005539D /* createAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A5DAF2A6F8A100005539D /* createAccount.swift */; };
-		491A5DC72A6FD3CA0005539D /* dateOfBirth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A5DC62A6FD3CA0005539D /* dateOfBirth.swift */; };
 		491A5DC92A7002E90005539D /* mobileNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A5DC82A7002E90005539D /* mobileNumber.swift */; };
 		491A5DCE2A70354F0005539D /* signupWithEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A5DCD2A70354F0005539D /* signupWithEmail.swift */; };
 		491A5DD02A70EF3F0005539D /* createPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A5DCF2A70EF3F0005539D /* createPassword.swift */; };
@@ -27,7 +26,6 @@
 
 /* Begin PBXFileReference section */
 		491A5DAF2A6F8A100005539D /* createAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccount.swift; sourceTree = "<group>"; };
-		491A5DC62A6FD3CA0005539D /* dateOfBirth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dateOfBirth.swift; sourceTree = "<group>"; };
 		491A5DC82A7002E90005539D /* mobileNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobileNumber.swift; sourceTree = "<group>"; };
 		491A5DCD2A70354F0005539D /* signupWithEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupWithEmail.swift; sourceTree = "<group>"; };
 		491A5DCF2A70EF3F0005539D /* createPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createPassword.swift; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 				65B1DE702A6CEE540076A401 /* AppDelegate.swift */,
 				65B1DE722A6CEE540076A401 /* SceneDelegate.swift */,
 				65B1DE742A6CEE540076A401 /* ViewController.swift */,
-				491A5DC62A6FD3CA0005539D /* dateOfBirth.swift */,
 				491A5DCF2A70EF3F0005539D /* createPassword.swift */,
 				491A5DCD2A70354F0005539D /* signupWithEmail.swift */,
 				491A5DC82A7002E90005539D /* mobileNumber.swift */,
@@ -243,7 +240,6 @@
 				65B1DE712A6CEE540076A401 /* AppDelegate.swift in Sources */,
 				491A5DB02A6F8A100005539D /* createAccount.swift in Sources */,
 				65B1DE732A6CEE540076A401 /* SceneDelegate.swift in Sources */,
-				491A5DC72A6FD3CA0005539D /* dateOfBirth.swift in Sources */,
 				498342892A6EE4F000C6413F /* JoinFacebook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
