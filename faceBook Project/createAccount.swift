@@ -24,7 +24,7 @@ class createAccount: UIViewController {
     }
     func alreadyHaveAnAccount(){
         let navigation = storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        navigationController?.popViewController(animated: true)
+        navigationController?.pushViewController(navigation, animated: true)
     }
     
     @IBAction func nextButtonAction(_ sender: UIButton) {

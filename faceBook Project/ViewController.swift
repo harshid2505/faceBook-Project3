@@ -31,5 +31,11 @@ class ViewController: UIViewController {
     @IBAction func crateNewButtonAction(_ sender: Any) {
         createNewAccountNavigation()
     }
+    
+    @IBAction func forgotPasswordButtonAction(_ sender: UIButton) {
+        let navigation = storyboard?.instantiateViewController(withIdentifier: "forgetPage") as! forgetPage
+        navigationController?.pushViewController(navigation, animated: true)
+    }
+    
 }
 
