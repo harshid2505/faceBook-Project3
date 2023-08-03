@@ -8,6 +8,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var createNewButton: UIButton!
+    @IBOutlet weak var emailTextField: UITextField!
+    
     
     var refa: Firestore!
     
