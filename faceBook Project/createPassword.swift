@@ -12,6 +12,7 @@ class createPassword: UIViewController {
     
     var refa: Firestore!
     var email = String()
+    var uid = Auth.auth().currentUser?.uid
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +50,8 @@ class createPassword: UIViewController {
             print(authDataResult,error?.localizedDescription)
         }
         
-        refa.collection("User").addDocument(data: ["email ID": email,"Password": passwordTxt.text!])
+        refa.collection("User").document(uid!).setData(["Email ID": email,"Password": passwordTxt.text!])
+        
     }
     
     @IBAction func alreadyHaveAnAccountButtonAction(_ sender: Any) {
@@ -63,5 +65,6 @@ class createPassword: UIViewController {
     @IBAction func nextButtonAction(_ sender: Any) {
         let navigation = storyboard?.instantiateViewController(withIdentifier: "saveInfo") as! saveInfo
         navigationController?.pushViewController(navigation, animated: true)
+        fireStore()
     }
 }
