@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(navigation, animated: true)
     }
     
-    @IBAction func forgotPasswordButtonActio(_ sender: UIButton) {
+    @IBAction func forgotPasswordButtonActio(_ sender: Any) {
         let navigate = storyboard?.instantiateViewController(withIdentifier: "forgetPage") as! forgetPage
         navigationController?.pushViewController(navigate, animated: true)
     }

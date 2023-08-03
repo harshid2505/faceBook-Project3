@@ -41,4 +41,8 @@ class mobileNumber: UIViewController {
     @IBAction func signUpWithEmailAction(_ sender: Any) {
         signUpWithEmailNavigation()
     }
+    @IBAction func alreadyHaveAnAccountButtonAction(_ sender: Any) {
+        let navigation = storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
+        navigationController?.pushViewController(navigation, animated: true)
+    }
 }

@@ -15,9 +15,9 @@ class saveInfo: UIViewController {
     func setNotNowButton(){
         notNowButton.layer.cornerRadius = 20
     }
-    func nextButtonnavigation(){
+    func saveButtonnavigation(){
         let navigation = storyboard?.instantiateViewController(withIdentifier: "TermsAndCondition") as! TermsAndCondition
-        navigationController?.popViewController(animated: true)
+        navigationController?.pushViewController(navigation, animated: true)
     }
     func alreadyHaveAnAccount(){
         let navigation = storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
@@ -32,7 +32,7 @@ class saveInfo: UIViewController {
         backButtonNavigation()
     }
     @IBAction func saveButtonAction(_ sender: Any) {
-        nextButtonnavigation()
+        saveButtonnavigation()
     }
     @IBAction func notNowButtonAction(_ sender: Any) {
     }

@@ -32,7 +32,8 @@ class genderPage: UIViewController {
     }
     
     @IBAction func alreadyAccountButtonAction(_ sender: UIButton) {
-        
+        let navigation = storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
+        navigationController?.pushViewController(navigation, animated: true)
     }
     
     @IBAction func backButtonAction(_ sender: UIButton) {

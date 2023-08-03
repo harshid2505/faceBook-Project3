@@ -23,7 +23,7 @@ class signupWithEmail: UIViewController {
     }
     func nextButtonNavigation(){
         let navigation = storyboard?.instantiateViewController(withIdentifier: "createPassword") as! createPassword
-        navigationController?.popViewController(animated: true)
+        navigationController?.pushViewController(navigation, animated: true)
     }
     func signupWithMobileNumberButtonNavigation(){
         let navigation = storyboard?.instantiateViewController(withIdentifier: "mobileNumber") as! mobileNumber
@@ -33,8 +33,13 @@ class signupWithEmail: UIViewController {
         backButtonNavigation()
     }
     @IBAction func nextButtonNavigation(_ sender: Any) {
+        nextButtonNavigation()
     }
     @IBAction func signupWithMobileNumberAction(_ sender: Any) {
         signupWithMobileNumberButtonNavigation()
+    }
+    @IBAction func alreadyhaveAnAccountButtonAction(_ sender: Any) {
+        let navigation = storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
+        navigationController?.pushViewController(navigation, animated: true)
     }
 }
