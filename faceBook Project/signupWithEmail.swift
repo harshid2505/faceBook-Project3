@@ -29,6 +29,7 @@ class signupWithEmail: UIViewController {
     func nextButtonNavigation(){
         let navigation = storyboard?.instantiateViewController(withIdentifier: "createPassword") as! createPassword
         navigationController?.pushViewController(navigation, animated: true)
+        setNextButton()
     }
     
     func signupWithMobileNumberButtonNavigation(){
