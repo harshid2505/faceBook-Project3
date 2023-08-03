@@ -1,4 +1,8 @@
 import UIKit
+import FirebaseAuth
+import FirebaseCore
+import FirebaseDatabase
+import FirebaseFirestore
 
 class createPassword: UIViewController {
     
@@ -6,10 +10,14 @@ class createPassword: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var showHideButton: UIButton!
     
+    var refa: Firestore!
+    var email = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setNextButton()
         showHideButton.addTarget(self, action: #selector(togglePasswordVisibility), for: .touchUpInside)
+        refa = Firestore.firestore()
     }
     
     @objc func togglePasswordVisibility() {
@@ -34,6 +42,14 @@ class createPassword: UIViewController {
     func alreadyHaveAnAccount(){
         let navigation = storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
         navigationController?.popViewController(animated: true)
+    }
+    
+    func fireStore(){
+        Auth.auth().createUser(withEmail: email, password: passwordTxt.text!){authDataResult, error in
+            print(authDataResult,error?.localizedDescription)
+        }
+        
+        refa.collection("User").addDocument(data: ["email ID": email,"Password": passwordTxt.text!])
     }
     
     @IBAction func alreadyHaveAnAccountButtonAction(_ sender: Any) {

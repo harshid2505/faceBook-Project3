@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>64198516386-0edrsabsfttb5bfhecpc90qaj82o385q.apps.googleusercontent.com</string>
+	<string>804371778849-93pm4ogubagrjq59l0gb3v8q92kch0du.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.64198516386-0edrsabsfttb5bfhecpc90qaj82o385q</string>
+	<string>com.googleusercontent.apps.804371778849-93pm4ogubagrjq59l0gb3v8q92kch0du</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDliS_075hl2UtwS9jZQ1-ewrUgVcp66D0</string>
+	<string>AIzaSyDWtOraO32vCFAEvJjBtb5vmDOOYbDVamg</string>
 	<key>GCM_SENDER_ID</key>
-	<string>64198516386</string>
+	<string>804371778849</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>rnw.faceBook-Project</string>
 	<key>PROJECT_ID</key>
-	<string>facebook-project-a9010</string>
+	<string>facebook-project-6a5f2</string>
 	<key>STORAGE_BUCKET</key>
-	<string>facebook-project-a9010.appspot.com</string>
+	<string>facebook-project-6a5f2.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:64198516386:ios:8f021ecba163265b24c1fb</string>
+	<string>1:804371778849:ios:7e2df248317596a5c10260</string>
 </dict>
 </plist>

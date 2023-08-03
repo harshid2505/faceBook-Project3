@@ -16,7 +16,7 @@
 		497625B12A7AA2EF0002588E /* saveLoginInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497625B02A7AA2EF0002588E /* saveLoginInfoPage.swift */; };
 		498342892A6EE4F000C6413F /* JoinFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498342882A6EE4F000C6413F /* JoinFacebook.swift */; };
 		6501E41E2A7B66A200CD522B /* genderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501E41D2A7B66A200CD522B /* genderTableViewCell.swift */; };
-		654F1BD32A6E6C9A00B84335 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 654F1BD22A6E6C9A00B84335 /* GoogleService-Info.plist */; };
+		655969652A7B98DB00C9F91E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 655969642A7B98DB00C9F91E /* GoogleService-Info.plist */; };
 		656DF25A2A7A5B32003A2044 /* forgetPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656DF2592A7A5B32003A2044 /* forgetPage.swift */; };
 		6578E0632A7A4557009A27BC /* dateOfBirth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578E0622A7A4557009A27BC /* dateOfBirth.swift */; };
 		6578E0652A7A4A67009A27BC /* birthdayPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6578E0642A7A4A67009A27BC /* birthdayPop.swift */; };
@@ -42,7 +42,7 @@
 		4B152393A0F95763874CDA6D /* Pods_faceBook_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_faceBook_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53DB3E327C1BD0C44CA10455 /* Pods-faceBook Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceBook Project.debug.xcconfig"; path = "Target Support Files/Pods-faceBook Project/Pods-faceBook Project.debug.xcconfig"; sourceTree = "<group>"; };
 		6501E41D2A7B66A200CD522B /* genderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = genderTableViewCell.swift; sourceTree = "<group>"; };
-		654F1BD22A6E6C9A00B84335 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		655969642A7B98DB00C9F91E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		656DF2592A7A5B32003A2044 /* forgetPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forgetPage.swift; sourceTree = "<group>"; };
 		6578E0622A7A4557009A27BC /* dateOfBirth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateOfBirth.swift; sourceTree = "<group>"; };
 		6578E0642A7A4A67009A27BC /* birthdayPop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = birthdayPop.swift; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 				65B1DE792A6CEE540076A401 /* Assets.xcassets */,
 				65B1DE7B2A6CEE540076A401 /* LaunchScreen.storyboard */,
 				65B1DE7E2A6CEE540076A401 /* Info.plist */,
-				654F1BD22A6E6C9A00B84335 /* GoogleService-Info.plist */,
+				655969642A7B98DB00C9F91E /* GoogleService-Info.plist */,
 			);
 			path = "faceBook Project";
 			sourceTree = "<group>";
@@ -194,7 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65B1DE7D2A6CEE540076A401 /* LaunchScreen.storyboard in Resources */,
-				654F1BD32A6E6C9A00B84335 /* GoogleService-Info.plist in Resources */,
+				655969652A7B98DB00C9F91E /* GoogleService-Info.plist in Resources */,
 				65B1DE7A2A6CEE540076A401 /* Assets.xcassets in Resources */,
 				65B1DE782A6CEE540076A401 /* Main.storyboard in Resources */,
 			);
