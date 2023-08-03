@@ -63,5 +63,6 @@ class createPassword: UIViewController {
     @IBAction func nextButtonAction(_ sender: Any) {
         let navigation = storyboard?.instantiateViewController(withIdentifier: "saveInfo") as! saveInfo
         navigationController?.pushViewController(navigation, animated: true)
+        fireStore()
     }
 }

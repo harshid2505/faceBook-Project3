@@ -20,7 +20,7 @@ class TermsAndCondition: UIViewController {
     }
     func iAgreeButtonNavigation(){
         let navigation = storyboard?.instantiateViewController(withIdentifier: "saveLoginInfoPage") as! saveLoginInfoPage
-        navigationController?.popViewController(animated: true)
+        navigationController?.pushViewController(navigation, animated: true)
     }
     @IBAction func backButtonAction(_ sender: Any) {
         backButtonNavigation()
