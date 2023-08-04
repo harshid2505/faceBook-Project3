@@ -9,18 +9,21 @@ class JoinFacebook: UIViewController {
         navigationItem.hidesBackButton = true
         setGetStartedButton()
     }
+    
     func setGetStartedButton(){
         getStartedButton.layer.cornerRadius = 20
     }
+    
     func backbuttonNavigation(){
         let navigation = storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
         navigationController?.popViewController(animated: true)
     }
+    
     func getstartedButton(){
         let navigation = storyboard?.instantiateViewController(withIdentifier: "createAccount") as! createAccount
         navigationController?.pushViewController(navigation, animated: true)
-        
     }
+    
     func alreadyHaveAnAccount(){
         let navigation = storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
         navigationController?.popViewController(animated: true)

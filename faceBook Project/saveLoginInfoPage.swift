@@ -6,16 +6,14 @@ class saveLoginInfoPage: UIViewController {
     @IBOutlet weak var notNowbutton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        setSaveButton()
         setNotNowButton()
     }
-    func setSaveButton(){
-        saveButton.layer.cornerRadius = 20
-    }
+    
     func setNotNowButton(){
-        notNowbutton.layer.cornerRadius = 20
+        notNowbutton.layer.cornerRadius = 22
         notNowbutton.layer.borderWidth = 1
         notNowbutton.layer.borderColor = UIColor.gray.cgColor
+        saveButton.layer.cornerRadius = 22
     }
     func SaveButtonnavigation(){
         let navigation = storyboard?.instantiateViewController(withIdentifier: "TermsAndCondition") as! TermsAndCondition
