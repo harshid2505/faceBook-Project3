@@ -69,6 +69,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Log in">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="logInButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OjN-z4-v8t"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meta logo" translatesAutoresizingMaskIntoConstraints="NO" id="Q3u-2y-veI">
                                 <rect key="frame" x="131" y="795" width="130" height="25"/>
@@ -116,6 +119,7 @@
                         <outlet property="createNewButton" destination="GPb-qG-O3Y" id="yIH-RR-7hA"/>
                         <outlet property="emailTextField" destination="fdE-rf-caA" id="yYB-zJ-2Tw"/>
                         <outlet property="logInButton" destination="xnG-PU-45c" id="dYE-HW-rqS"/>
+                        <outlet property="passwordTextField" destination="cpg-kw-eG1" id="mIz-ng-EWe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -612,7 +616,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pOq-Ii-whm">
-                                                    <rect key="frame" x="326" y="16" width="26" height="31.999999999999986"/>
+                                                    <rect key="frame" x="326" y="15.999999999999998" width="26" height="31.999999999999986"/>
                                                     <color key="tintColor" systemColor="systemGrayColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="33.329999999999998" id="ITi-ji-8Q5"/>
@@ -727,8 +731,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your mobile number." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDf-pV-WOI">
-                                <rect key="frame" x="16" y="159" width="211" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email address." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDf-pV-WOI">
+                                <rect key="frame" x="16" y="159" width="203" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="ExU-vf-esq"/>
                                 </constraints>
@@ -736,7 +740,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mdg-m4-ThP">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mdg-m4-ThP">
                                 <rect key="frame" x="16" y="201" width="361" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="esD-T1-alf"/>
@@ -752,9 +756,9 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Find account"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot password"/>
                                 <connections>
-                                    <action selector="findAccountButtonAction:" destination="7G2-xm-1LY" eventType="touchUpInside" id="IlC-b6-xYT"/>
+                                    <action selector="forgotPasswordButtonAction:" destination="7G2-xm-1LY" eventType="touchUpInside" id="Kv6-eI-SXL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0c-Xn-7M8">
@@ -764,7 +768,7 @@
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Search by email instead">
+                                <buttonConfiguration key="configuration" style="plain" title="Search by mobile number instead">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -808,7 +812,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="0OZ-lP-ADx"/>
                     <connections>
-                        <outlet property="findAccountButton" destination="QwR-03-zW2" id="ah3-RX-3kZ"/>
+                        <outlet property="forgotPasswordButton" destination="QwR-03-zW2" id="r1z-f1-2b1"/>
                         <outlet property="mobileLb" destination="SDf-pV-WOI" id="BMM-Yg-cXb"/>
                         <outlet property="mobileTextField" destination="mdg-m4-ThP" id="iuu-ON-Imo"/>
                         <outlet property="searchButton" destination="K0c-Xn-7M8" id="bEM-mJ-EeY"/>
@@ -1396,13 +1400,6 @@
                                     <action selector="alreadyHaveAnAccountButtonAction:" destination="Mgp-eR-HU1" eventType="touchUpInside" id="JGq-07-Eyg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nW-5P-Eju">
-                                <rect key="frame" x="60" y="577" width="226" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OOP-N5-mz7"/>
                         <color key="backgroundColor" red="0.96470588450000005" green="0.9529411793" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
