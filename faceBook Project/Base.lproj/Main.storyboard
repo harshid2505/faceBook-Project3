@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mh4-oh-beH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22146" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mh4-oh-beH">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22122"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -69,6 +70,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Log in">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="logInButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OjN-z4-v8t"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meta logo" translatesAutoresizingMaskIntoConstraints="NO" id="Q3u-2y-veI">
                                 <rect key="frame" x="131" y="795" width="130" height="25"/>
@@ -116,6 +120,7 @@
                         <outlet property="createNewButton" destination="GPb-qG-O3Y" id="yIH-RR-7hA"/>
                         <outlet property="emailTextField" destination="fdE-rf-caA" id="yYB-zJ-2Tw"/>
                         <outlet property="logInButton" destination="xnG-PU-45c" id="dYE-HW-rqS"/>
+                        <outlet property="passwordTextField" destination="cpg-kw-eG1" id="mIz-ng-EWe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -612,7 +617,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pOq-Ii-whm">
-                                                    <rect key="frame" x="326" y="15.999999999999998" width="26" height="31.999999999999986"/>
+                                                    <rect key="frame" x="326" y="16" width="26" height="31.999999999999986"/>
                                                     <color key="tintColor" systemColor="systemGrayColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="33.329999999999998" id="ITi-ji-8Q5"/>
@@ -727,8 +732,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your mobile number." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDf-pV-WOI">
-                                <rect key="frame" x="16" y="159" width="211" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email address." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDf-pV-WOI">
+                                <rect key="frame" x="16" y="159" width="203" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="ExU-vf-esq"/>
                                 </constraints>
@@ -736,7 +741,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mdg-m4-ThP">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mdg-m4-ThP">
                                 <rect key="frame" x="16" y="201" width="361" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="esD-T1-alf"/>
@@ -752,9 +757,9 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Find account"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot password"/>
                                 <connections>
-                                    <action selector="findAccountButtonAction:" destination="7G2-xm-1LY" eventType="touchUpInside" id="IlC-b6-xYT"/>
+                                    <action selector="forgotPasswordButtonAction:" destination="7G2-xm-1LY" eventType="touchUpInside" id="Kv6-eI-SXL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0c-Xn-7M8">
@@ -764,7 +769,7 @@
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Search by email instead">
+                                <buttonConfiguration key="configuration" style="plain" title="Search by mobile number instead">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -808,7 +813,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="0OZ-lP-ADx"/>
                     <connections>
-                        <outlet property="findAccountButton" destination="QwR-03-zW2" id="ah3-RX-3kZ"/>
+                        <outlet property="forgotPasswordButton" destination="QwR-03-zW2" id="r1z-f1-2b1"/>
                         <outlet property="mobileLb" destination="SDf-pV-WOI" id="BMM-Yg-cXb"/>
                         <outlet property="mobileTextField" destination="mdg-m4-ThP" id="iuu-ON-Imo"/>
                         <outlet property="searchButton" destination="K0c-Xn-7M8" id="bEM-mJ-EeY"/>
@@ -1396,13 +1401,6 @@
                                     <action selector="alreadyHaveAnAccountButtonAction:" destination="Mgp-eR-HU1" eventType="touchUpInside" id="JGq-07-Eyg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nW-5P-Eju">
-                                <rect key="frame" x="60" y="577" width="226" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OOP-N5-mz7"/>
                         <color key="backgroundColor" red="0.96470588450000005" green="0.9529411793" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1558,124 +1556,6 @@
             </objects>
             <point key="canvasLocation" x="5076" y="1437"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="gFb-bX-EbG">
-            <objects>
-                <viewController storyboardIdentifier="marketPlaceTopTabBar" id="ZWs-9X-QBT" customClass="marketPlaceTopTabBar" customModule="faceBook_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nju-5o-Aiq">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="4nP-3B-zAL"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="8Wl-Ow-Em4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hmQ-u2-x8m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6827" y="936"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="lGz-ud-kee">
-            <objects>
-                <viewController storyboardIdentifier="notifiacationsTopTabBar" id="r01-2A-FqF" customClass="notifiacationsTopTabBar" customModule="faceBook_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="j8H-1k-YAg">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="eU5-eX-2ud"/>
-                        <color key="backgroundColor" systemColor="tintColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="JYV-0C-LTU"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YCr-mc-9LN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6827" y="1591"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="wfR-6R-EV6">
-            <objects>
-                <viewController storyboardIdentifier="menuTopTabBar" id="JYK-iH-031" customClass="menuTopTabBar" customModule="faceBook_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sIv-mY-VM4">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6qc-NO-Mr5"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="XvM-0m-ppx"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SZ0-dI-X7o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6827" y="2279"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="pqj-QO-u6B">
-            <objects>
-                <viewController storyboardIdentifier="homeTopTabBar" id="Uqg-3e-Cwa" customClass="homeTopTabBar" customModule="faceBook_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="f1S-6I-obt">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="IDP-tJ-XPh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Qan-Sb-aIa"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="suu-x3-TXw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6827" y="-1054"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="j2M-Cd-J60">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Qg-Up-pgT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tabBarController storyboardIdentifier="tabBarController" id="42g-kY-d5V" customClass="tabBarController" customModule="faceBook_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="snK-Zr-a8h">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="Uqg-3e-Cwa" kind="relationship" relationship="viewControllers" id="kkL-NH-af9"/>
-                        <segue destination="nfp-gY-6SG" kind="relationship" relationship="viewControllers" id="cfM-6v-tUq"/>
-                        <segue destination="8wu-vf-ZtO" kind="relationship" relationship="viewControllers" id="6cN-zC-s1H"/>
-                        <segue destination="ZWs-9X-QBT" kind="relationship" relationship="viewControllers" id="k3Y-bl-jXy"/>
-                        <segue destination="r01-2A-FqF" kind="relationship" relationship="viewControllers" id="08L-FR-x2V"/>
-                        <segue destination="JYK-iH-031" kind="relationship" relationship="viewControllers" id="bef-B7-Gpa"/>
-                    </connections>
-                </tabBarController>
-            </objects>
-            <point key="canvasLocation" x="5766" y="677"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="oqG-1U-adl">
-            <objects>
-                <viewController storyboardIdentifier="videoTopTabBar" id="8wu-vf-ZtO" customClass="videoTopTabBar" customModule="faceBook_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="EBU-zW-lmp">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Yql-YV-3L4"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="543-2G-Yic"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qim-tY-Ej8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6827" y="268"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="aej-qo-PJc">
-            <objects>
-                <viewController storyboardIdentifier="freindTopTabBar" id="nfp-gY-6SG" customClass="freindTopTabBar" customModule="faceBook_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4wh-p2-Jmq">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="eKF-dZ-tk7"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="aqd-9K-WzF"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wEs-DB-bTS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6827" y="-401"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="3sj-bR-mA1">
             <objects>
@@ -1704,34 +1584,22 @@
         <image name="openey" width="24" height="24"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

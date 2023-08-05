@@ -37,17 +37,31 @@ class signupWithEmail: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    func alert(){
+        let alert = UIAlertController.init(title: "Enter a email address", message: "You'll need to enter a email to continue.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive))
+        present(alert, animated: true)
+    }
+
+    
     @IBAction func backButtonAction(_ sender: Any) {
         backButtonNavigation()
     }
     
     @IBAction func nextButtonNavigation(_ sender: Any) {
-        nextButtonNavigation()
+        if emailAddresssTxt.text == ""{
+            alert()
+        }
+        else{
+            nextButtonNavigation()
+        }
     }
     
     @IBAction func signupWithMobileNumberAction(_ sender: Any) {
         signupWithMobileNumberButtonNavigation()
     }
+    
     @IBAction func alreadyhaveAnAccountButtonAction(_ sender: Any) {
         let navigation = storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
         navigationController?.pushViewController(navigation, animated: true)
