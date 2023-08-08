@@ -35,6 +35,13 @@ class dateOfBirth: UIViewController {
         birthDateField.inputAccessoryView = createToolBar()
     }
     
+    func alert(){
+        let alert = UIAlertController.init(title: "Select the date of birth", message: "You'll need to enter a date of birth to continue.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive))
+        present(alert, animated: true)
+    }
+    
     @objc func donePress(){
         let dateFormater = DateFormatter()
         dateFormater.dateStyle = .medium
@@ -55,8 +62,13 @@ class dateOfBirth: UIViewController {
     }
     
     @IBAction func nextButtonAction(_ sender: UIButton) {
-        let navigation = storyboard?.instantiateViewController(identifier: "genderPage") as! genderPage
-        navigationController?.pushViewController(navigation, animated: true)
+        if birthDateField.text == ""{
+            alert()
+        }
+        else{
+            let navigation = storyboard?.instantiateViewController(identifier: "genderPage") as! genderPage
+            navigationController?.pushViewController(navigation, animated: true)
+        }
     }
     
     @IBAction func alreadyAccountButtonAction(_ sender: UIButton) {

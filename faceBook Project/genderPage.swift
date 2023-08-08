@@ -23,12 +23,26 @@ class genderPage: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
     func nextButtonNavigation(){
         let navigation = storyboard?.instantiateViewController(withIdentifier: "mobileNumber") as! mobileNumber
         navigationController?.pushViewController(navigation, animated: true)
     }
+    
+    func alert(){
+        let alert = UIAlertController.init(title: "Select the gender", message: "You'll need to select gender to continue.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive))
+        present(alert, animated: true)
+    }
+    
     @IBAction func nextButtonAction(_ sender: UIButton) {
-        nextButtonNavigation()
+        if selectCell == -1{
+            alert()
+        }
+        else{
+            nextButtonNavigation()
+        }
     }
     
     @IBAction func alreadyAccountButtonAction(_ sender: UIButton) {

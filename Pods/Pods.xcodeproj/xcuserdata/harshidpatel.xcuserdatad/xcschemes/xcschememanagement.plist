@@ -98,7 +98,7 @@
 		<key>LZViewPager.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>23</integer>
+			<integer>24</integer>
 		</dict>
 		<key>Pods-faceBook Project.xcscheme</key>
 		<dict>
@@ -117,7 +117,7 @@
 		<key>SnapKit.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>24</integer>
+			<integer>23</integer>
 		</dict>
 		<key>abseil.xcscheme</key>
 		<dict>

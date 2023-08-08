@@ -8,11 +8,15 @@ import FirebaseFirestore
 class forgetPage: UIViewController {
     
     @IBOutlet weak var mobileLb: UILabel!
-    @IBOutlet weak var mobileTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var forgotPasswordButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
     
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
     var change = 0
+    var refa = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +24,10 @@ class forgetPage: UIViewController {
     }
     
     func resetPasseord(){
-        Auth.auth().sendPasswordReset(withEmail: mobileTextField.text!){ error in
+        Auth.auth().sendPasswordReset(withEmail: emailTextField.text!){ [self] error in
             if error == nil{
-                print("Success")
+                refa.collection("User").document(Auth.auth().currentUser!.uid).updateData(["Password":passwordTextField.text])
+                print("Yes")
             }
             else{
                 print(error?.localizedDescription)
@@ -30,19 +35,12 @@ class forgetPage: UIViewController {
         }
     }
     
-//    func updatePassword(){
-//        Auth.auth().currentUser?.updatePassword(to: passwd){error in
-//            if error == nil{
-//                print("password Update")
-//            }
-//            else{
-//                print()
-//            }
+//        func updatePassword(){
+//            Auth.auth().
 //        }
-//    }
     
-    func alert(){
-        let alert = UIAlertController.init(title: "Enter a mobile number", message: "You'll need to enter a 10 digit number to continue.", preferredStyle: .alert)
+    func alert(title:String,message:String){
+        let alert = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default))
         alert.addAction(UIAlertAction(title: "Cancel", style: .destructive))
         present(alert, animated: true)
@@ -55,18 +53,35 @@ class forgetPage: UIViewController {
     }
     
     @IBAction func forgotPasswordButtonAction(_ sender: UIButton) {
-        resetPasseord()
+        
+        if emailTextField.placeholder == "Email"{
+            if emailTextField.text == ""{
+                alert(title: "Enter a email address", message: "You'll need to enter a email to continue.")
+            }
+            else{
+                resetPasseord()
+            }
+        }
+        else{
+            if emailTextField.text!.count <= 9{
+                alert(title: "Enter a mobile number", message: "You'll need to enter a 10 digit number to continue.")
+            }
+            else{
+                print("yes")
+            }
+        }
+        
     }
     
     @IBAction func searchButtonAction(_ sender: UIButton) {
         if change == 0{
-            mobileTextField.placeholder = "Mobile number"
+            emailTextField.placeholder = "Mobile number"
             searchButton.setTitle("Search by email instead", for: .normal)
             mobileLb.text = "Enter your mobile number."
             change = 1
         }
         else{
-            mobileTextField.placeholder = "Email"
+            emailTextField.placeholder = "Email"
             searchButton.setTitle("Search by mobile number instead", for: .normal)
             mobileLb.text = "Enter your email address."
             change = 0
