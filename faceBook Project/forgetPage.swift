@@ -12,9 +12,6 @@ class forgetPage: UIViewController {
     @IBOutlet weak var forgotPasswordButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
     
-    @IBOutlet weak var passwordTextField: UITextField!
-    
-    
     var change = 0
     var refa = Firestore.firestore()
     
@@ -26,18 +23,13 @@ class forgetPage: UIViewController {
     func resetPasseord(){
         Auth.auth().sendPasswordReset(withEmail: emailTextField.text!){ [self] error in
             if error == nil{
-                refa.collection("User").document(Auth.auth().currentUser!.uid).updateData(["Password":passwordTextField.text])
-                print("Yes")
+                print("Success")
             }
             else{
                 print(error?.localizedDescription)
             }
         }
     }
-    
-//        func updatePassword(){
-//            Auth.auth().
-//        }
     
     func alert(title:String,message:String){
         let alert = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
