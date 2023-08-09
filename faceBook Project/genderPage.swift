@@ -1,10 +1,3 @@
-//
-//  genderPage.swift
-//  faceBook Project
-//
-//  Created by HARSHID PATEL on 02/08/23.
-//
-
 import UIKit
 
 class genderPage: UIViewController {
@@ -21,7 +14,7 @@ class genderPage: UIViewController {
         genderTableView.layer.cornerRadius = 10
         nextButton.layer.cornerRadius = 22
 
-        // Do any additional setup after loading the view.
+       
     }
     
     func nextButtonNavigation(){

@@ -628,7 +628,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pOq-Ii-whm">
-                                                    <rect key="frame" x="326" y="15.999999999999998" width="26" height="31.999999999999986"/>
+                                                    <rect key="frame" x="326" y="16" width="26" height="31.999999999999986"/>
                                                     <color key="tintColor" systemColor="systemGrayColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="33.329999999999998" id="ITi-ji-8Q5"/>
@@ -1558,6 +1558,62 @@
             </objects>
             <point key="canvasLocation" x="5075.5725190839694" y="676.76056338028172"/>
         </scene>
+        <!--Item 2-->
+        <scene sceneID="DTJ-HL-QYZ">
+            <objects>
+                <viewController storyboardIdentifier="friendsPage" id="gJs-rA-2Wt" customClass="friendsPage" customModule="faceBook_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v5L-gz-ZhG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5CR-hq-JCm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="MgE-QW-iPa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Fp-Us-nwy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7056" y="1029"/>
+        </scene>
+        <!--Home Page-->
+        <scene sceneID="hHG-Cn-Q82">
+            <objects>
+                <viewController storyboardIdentifier="homePage" id="dUt-gU-ioV" customClass="homePage" customModule="faceBook_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vGR-ed-pHY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1280px-Facebook_Logo_(2019) 1" translatesAutoresizingMaskIntoConstraints="NO" id="WzS-nL-5w9">
+                                <rect key="frame" x="16" y="59" width="137" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vKz-Dh-Dlj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vnx-rM-f4I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L12-e3-Psj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7982.4427480916029" y="372.53521126760563"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tow-GV-fQF">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBarController" id="YD1-tM-JNU" customClass="tabBarController" customModule="faceBook_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lhm-Le-wMi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nfS-7J-28P" kind="relationship" relationship="viewControllers" id="aG5-Ke-Agz"/>
+                        <segue destination="gJs-rA-2Wt" kind="relationship" relationship="viewControllers" id="KXJ-Q7-ttd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MSo-xz-KEX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6147" y="676"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="3sj-bR-mA1">
             <objects>
@@ -1575,8 +1631,28 @@
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
+        <!--Item 1-->
+        <scene sceneID="kCZ-VH-njV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nfS-7J-28P" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" id="tQA-vG-vka"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pqP-Sg-258">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dUt-gU-ioV" kind="relationship" relationship="rootViewController" id="0AD-Jy-hyQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wka-WG-yE4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7055.7251908396947" y="372.53521126760563"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="1280px-Facebook_Logo_(2019) 1" width="120" height="24"/>
         <image name="account" width="512" height="512"/>
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
         <image name="circle" catalog="system" width="128" height="123"/>
