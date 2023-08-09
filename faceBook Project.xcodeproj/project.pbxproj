@@ -146,9 +146,9 @@
 			children = (
 				65AD139D2A80EC9500CCE118 /* CComman */,
 				65AD139E2A80ED5100CCE118 /* PopPop */,
-				65B1DE762A6CEE540076A401 /* Main.storyboard */,
 				659A61792A8384B80085669C /* TableViewCell */,
 				659A61782A8383D80085669C /* ViewController */,
+				65B1DE762A6CEE540076A401 /* Main.storyboard */,
 				65B1DE792A6CEE540076A401 /* Assets.xcassets */,
 				65B1DE7B2A6CEE540076A401 /* LaunchScreen.storyboard */,
 				65B1DE7E2A6CEE540076A401 /* Info.plist */,
