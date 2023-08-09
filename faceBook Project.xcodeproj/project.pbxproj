@@ -79,13 +79,40 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		65AD139D2A80EC9500CCE118 /* CComman */ = {
+		659A61762A8381D20085669C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				65B1DE742A6CEE540076A401 /* ViewController.swift */,
+				498342882A6EE4F000C6413F /* JoinFacebook.swift */,
+				491A5DAF2A6F8A100005539D /* createAccount.swift */,
+				6578E0622A7A4557009A27BC /* dateOfBirth.swift */,
+				6578E0662A7A4DAF009A27BC /* genderPage.swift */,
+				656DF2592A7A5B32003A2044 /* forgetPage.swift */,
+				491A5DC82A7002E90005539D /* mobileNumber.swift */,
+				491A5DCD2A70354F0005539D /* signupWithEmail.swift */,
+				491A5DCF2A70EF3F0005539D /* createPassword.swift */,
+				491A5DD42A7184A40005539D /* saveInfo.swift */,
+				491A5DD62A7188B10005539D /* TermsAndCondition.swift */,
+				497625B02A7AA2EF0002588E /* saveLoginInfoPage.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		659A61772A8382A20085669C /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6501E41D2A7B66A200CD522B /* genderTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		65AD139D2A80EC9500CCE118 /* Comman */ = {
 			isa = PBXGroup;
 			children = (
 				65B1DE702A6CEE540076A401 /* AppDelegate.swift */,
 				65B1DE722A6CEE540076A401 /* SceneDelegate.swift */,
 			);
-			path = CComman;
+			path = Comman;
 			sourceTree = "<group>";
 		};
 		65AD139E2A80ED5100CCE118 /* PopPop */ = {
@@ -117,22 +144,11 @@
 		65B1DE6F2A6CEE540076A401 /* faceBook Project */ = {
 			isa = PBXGroup;
 			children = (
-				65AD139D2A80EC9500CCE118 /* CComman */,
+				65AD139D2A80EC9500CCE118 /* Comman */,
 				65AD139E2A80ED5100CCE118 /* PopPop */,
+				659A61762A8381D20085669C /* ViewController */,
+				659A61772A8382A20085669C /* TableViewCell */,
 				65B1DE762A6CEE540076A401 /* Main.storyboard */,
-				6578E0662A7A4DAF009A27BC /* genderPage.swift */,
-				6501E41D2A7B66A200CD522B /* genderTableViewCell.swift */,
-				497625B02A7AA2EF0002588E /* saveLoginInfoPage.swift */,
-				65B1DE742A6CEE540076A401 /* ViewController.swift */,
-				491A5DCF2A70EF3F0005539D /* createPassword.swift */,
-				491A5DCD2A70354F0005539D /* signupWithEmail.swift */,
-				491A5DC82A7002E90005539D /* mobileNumber.swift */,
-				491A5DAF2A6F8A100005539D /* createAccount.swift */,
-				498342882A6EE4F000C6413F /* JoinFacebook.swift */,
-				491A5DD42A7184A40005539D /* saveInfo.swift */,
-				491A5DD62A7188B10005539D /* TermsAndCondition.swift */,
-				656DF2592A7A5B32003A2044 /* forgetPage.swift */,
-				6578E0622A7A4557009A27BC /* dateOfBirth.swift */,
 				65B1DE792A6CEE540076A401 /* Assets.xcassets */,
 				65B1DE7B2A6CEE540076A401 /* LaunchScreen.storyboard */,
 				65B1DE7E2A6CEE540076A401 /* Info.plist */,
