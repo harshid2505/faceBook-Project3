@@ -29,7 +29,8 @@ class ViewController: UIViewController {
     func logIn(){
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!){authDataResult, error in
             if error == nil{
-                print("Log In")
+                let navigate = self.storyboard?.instantiateViewController(identifier: "saveLoginInfoPage") as! saveLoginInfoPage
+                self.navigationController?.pushViewController(navigate, animated: true)
             }
             else{
                 self.alert(title: "Error", message: error!.localizedDescription)
@@ -71,6 +72,5 @@ class ViewController: UIViewController {
         let navigate = storyboard?.instantiateViewController(withIdentifier: "forgetPage") as! forgetPage
         navigationController?.pushViewController(navigate, animated: true)
     }
-    
 }
 

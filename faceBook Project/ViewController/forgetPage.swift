@@ -41,7 +41,7 @@ class forgetPage: UIViewController {
     @IBAction func backButtonAction(_ sender: UIButton) {
         let navigate = storyboard?.instantiateViewController(identifier: "ViewController") as!
         ViewController
-        navigationController?.pushViewController(navigate, animated: true)
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func forgotPasswordButtonAction(_ sender: UIButton) {
