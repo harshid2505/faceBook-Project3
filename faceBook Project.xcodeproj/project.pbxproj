@@ -15,6 +15,12 @@
 		491A5DD72A7188B10005539D /* TermsAndCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A5DD62A7188B10005539D /* TermsAndCondition.swift */; };
 		497625B12A7AA2EF0002588E /* saveLoginInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497625B02A7AA2EF0002588E /* saveLoginInfoPage.swift */; };
 		498342892A6EE4F000C6413F /* JoinFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498342882A6EE4F000C6413F /* JoinFacebook.swift */; };
+		49FD35E42A86200100CC4A12 /* friendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD35E32A86200100CC4A12 /* friendsTableViewCell.swift */; };
+		49FD35E62A8633F800CC4A12 /* yourfriendsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD35E52A8633F800CC4A12 /* yourfriendsPage.swift */; };
+		49FD35E92A863C4500CC4A12 /* searchfriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD35E82A863C4500CC4A12 /* searchfriendsTableViewCell.swift */; };
+		49FD35ED2A86921000CC4A12 /* findFriendsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD35EC2A86921000CC4A12 /* findFriendsPage.swift */; };
+		49FD35EF2A8699F000CC4A12 /* buttonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD35EE2A8699F000CC4A12 /* buttonCollectionViewCell.swift */; };
+		49FD35F42A869ACE00CC4A12 /* shopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD35F32A869ACE00CC4A12 /* shopCollectionViewCell.swift */; };
 		6501E41E2A7B66A200CD522B /* genderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501E41D2A7B66A200CD522B /* genderTableViewCell.swift */; };
 		651FFBB32A84D7D200B33242 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FFBB22A84D7D200B33242 /* TabBarController.swift */; };
 		655969652A7B98DB00C9F91E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 655969642A7B98DB00C9F91E /* GoogleService-Info.plist */; };
@@ -49,6 +55,12 @@
 		491A5DD62A7188B10005539D /* TermsAndCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndCondition.swift; sourceTree = "<group>"; };
 		497625B02A7AA2EF0002588E /* saveLoginInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveLoginInfoPage.swift; sourceTree = "<group>"; };
 		498342882A6EE4F000C6413F /* JoinFacebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinFacebook.swift; sourceTree = "<group>"; };
+		49FD35E32A86200100CC4A12 /* friendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friendsTableViewCell.swift; sourceTree = "<group>"; };
+		49FD35E52A8633F800CC4A12 /* yourfriendsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yourfriendsPage.swift; sourceTree = "<group>"; };
+		49FD35E82A863C4500CC4A12 /* searchfriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchfriendsTableViewCell.swift; sourceTree = "<group>"; };
+		49FD35EC2A86921000CC4A12 /* findFriendsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findFriendsPage.swift; sourceTree = "<group>"; };
+		49FD35EE2A8699F000CC4A12 /* buttonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonCollectionViewCell.swift; sourceTree = "<group>"; };
+		49FD35F32A869ACE00CC4A12 /* shopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopCollectionViewCell.swift; sourceTree = "<group>"; };
 		4B152393A0F95763874CDA6D /* Pods_faceBook_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_faceBook_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53DB3E327C1BD0C44CA10455 /* Pods-faceBook Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceBook Project.debug.xcconfig"; path = "Target Support Files/Pods-faceBook Project/Pods-faceBook Project.debug.xcconfig"; sourceTree = "<group>"; };
 		6501E41D2A7B66A200CD522B /* genderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = genderTableViewCell.swift; sourceTree = "<group>"; };
@@ -99,14 +111,60 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		49FD35E22A861FA300CC4A12 /* friends  */ = {
+			isa = PBXGroup;
+			children = (
+				49FD35F12A869A4100CC4A12 /* friends page */,
+				49FD35E72A86341400CC4A12 /* your friends */,
+			);
+			path = "friends ";
+			sourceTree = "<group>";
+		};
+		49FD35E72A86341400CC4A12 /* your friends */ = {
+			isa = PBXGroup;
+			children = (
+				49FD35E52A8633F800CC4A12 /* yourfriendsPage.swift */,
+				49FD35E82A863C4500CC4A12 /* searchfriendsTableViewCell.swift */,
+				49FD35EC2A86921000CC4A12 /* findFriendsPage.swift */,
+			);
+			path = "your friends";
+			sourceTree = "<group>";
+		};
+		49FD35F02A869A0300CC4A12 /* shop  */ = {
+			isa = PBXGroup;
+			children = (
+				49FD35F22A869A6D00CC4A12 /* shop page */,
+			);
+			path = "shop ";
+			sourceTree = "<group>";
+		};
+		49FD35F12A869A4100CC4A12 /* friends page */ = {
+			isa = PBXGroup;
+			children = (
+				65F7C1D12A8513F200BBB7FB /* FriendsPage.swift */,
+				49FD35E32A86200100CC4A12 /* friendsTableViewCell.swift */,
+			);
+			path = "friends page";
+			sourceTree = "<group>";
+		};
+		49FD35F22A869A6D00CC4A12 /* shop page */ = {
+			isa = PBXGroup;
+			children = (
+				65F7C1D32A85141400BBB7FB /* ShopPage.swift */,
+				49FD35EE2A8699F000CC4A12 /* buttonCollectionViewCell.swift */,
+				49FD35F32A869ACE00CC4A12 /* shopCollectionViewCell.swift */,
+			);
+			path = "shop page";
+			sourceTree = "<group>";
+		};
 		651FFBB72A84DD0100B33242 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
 				651FFBB22A84D7D200B33242 /* TabBarController.swift */,
 				65F7C1D92A85154C00BBB7FB /* HomePage.swift */,
 				65F7C1CF2A8513BE00BBB7FB /* ReelPage.swift */,
-				65F7C1D12A8513F200BBB7FB /* FriendsPage.swift */,
-				65F7C1D32A85141400BBB7FB /* ShopPage.swift */,
+				49FD35E22A861FA300CC4A12 /* friends  */,
+				49FD35F02A869A0300CC4A12 /* shop  */,
 				65F7C1D52A85144100BBB7FB /* NotificationPage.swift */,
 				65F7C1D72A85146600BBB7FB /* MenuPage.swift */,
 			);
@@ -320,10 +378,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6501E41E2A7B66A200CD522B /* genderTableViewCell.swift in Sources */,
+				49FD35E92A863C4500CC4A12 /* searchfriendsTableViewCell.swift in Sources */,
 				65F7C1DA2A85154D00BBB7FB /* HomePage.swift in Sources */,
 				491A5DD72A7188B10005539D /* TermsAndCondition.swift in Sources */,
 				65F7C1D82A85146600BBB7FB /* MenuPage.swift in Sources */,
 				6578E0632A7A4557009A27BC /* dateOfBirth.swift in Sources */,
+				49FD35EF2A8699F000CC4A12 /* buttonCollectionViewCell.swift in Sources */,
 				65F7C1D22A8513F200BBB7FB /* FriendsPage.swift in Sources */,
 				6578E0652A7A4A67009A27BC /* birthdayPop.swift in Sources */,
 				497625B12A7AA2EF0002588E /* saveLoginInfoPage.swift in Sources */,
@@ -338,7 +398,11 @@
 				65F7C1D42A85141400BBB7FB /* ShopPage.swift in Sources */,
 				6578E0672A7A4DAF009A27BC /* genderPage.swift in Sources */,
 				65B1DE712A6CEE540076A401 /* AppDelegate.swift in Sources */,
+				49FD35E62A8633F800CC4A12 /* yourfriendsPage.swift in Sources */,
+				49FD35ED2A86921000CC4A12 /* findFriendsPage.swift in Sources */,
 				65F7C1D02A8513BE00BBB7FB /* ReelPage.swift in Sources */,
+				49FD35F42A869ACE00CC4A12 /* shopCollectionViewCell.swift in Sources */,
+				49FD35E42A86200100CC4A12 /* friendsTableViewCell.swift in Sources */,
 				491A5DB02A6F8A100005539D /* createAccount.swift in Sources */,
 				65B1DE732A6CEE540076A401 /* SceneDelegate.swift in Sources */,
 				65F7C1DC2A85169100BBB7FB /* postPop.swift in Sources */,
