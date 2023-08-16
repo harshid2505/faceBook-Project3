@@ -16,6 +16,8 @@
 		491A5DD72A7188B10005539D /* TermsAndCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491A5DD62A7188B10005539D /* TermsAndCondition.swift */; };
 		4928D0D22A8A7F3300EC82A9 /* morepopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4928D0D12A8A7F3300EC82A9 /* morepopUp.swift */; };
 		4928D0D72A8A839200EC82A9 /* PopUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4928D0D62A8A839200EC82A9 /* PopUpTableViewCell.swift */; };
+		495426472A8CB5D300FAB2DA /* menuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495426462A8CB5D300FAB2DA /* menuCollectionViewCell.swift */; };
+		495426492A8CC80C00FAB2DA /* settingsAndPrivacyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495426482A8CC80C00FAB2DA /* settingsAndPrivacyPage.swift */; };
 		497625B12A7AA2EF0002588E /* saveLoginInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497625B02A7AA2EF0002588E /* saveLoginInfoPage.swift */; };
 		4978ACFC2A8B7EE400461E89 /* notificationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4978ACFB2A8B7EE400461E89 /* notificationsTableViewCell.swift */; };
 		498342892A6EE4F000C6413F /* JoinFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498342882A6EE4F000C6413F /* JoinFacebook.swift */; };
@@ -61,6 +63,8 @@
 		491A5DD62A7188B10005539D /* TermsAndCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndCondition.swift; sourceTree = "<group>"; };
 		4928D0D12A8A7F3300EC82A9 /* morepopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = morepopUp.swift; sourceTree = "<group>"; };
 		4928D0D62A8A839200EC82A9 /* PopUpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpTableViewCell.swift; sourceTree = "<group>"; };
+		495426462A8CB5D300FAB2DA /* menuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = menuCollectionViewCell.swift; path = ../menuCollectionViewCell.swift; sourceTree = "<group>"; };
+		495426482A8CC80C00FAB2DA /* settingsAndPrivacyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsAndPrivacyPage.swift; sourceTree = "<group>"; };
 		497625B02A7AA2EF0002588E /* saveLoginInfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveLoginInfoPage.swift; sourceTree = "<group>"; };
 		4978ACFB2A8B7EE400461E89 /* notificationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationsTableViewCell.swift; sourceTree = "<group>"; };
 		498342882A6EE4F000C6413F /* JoinFacebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinFacebook.swift; sourceTree = "<group>"; };
@@ -130,6 +134,16 @@
 			path = notification;
 			sourceTree = "<group>";
 		};
+		4978AD002A8CB59C00461E89 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				65F7C1D72A85146600BBB7FB /* MenuPage.swift */,
+				495426462A8CB5D300FAB2DA /* menuCollectionViewCell.swift */,
+				495426482A8CC80C00FAB2DA /* settingsAndPrivacyPage.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		49FD35E22A861FA300CC4A12 /* friends  */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,7 +187,7 @@
 				49FD35E22A861FA300CC4A12 /* friends  */,
 				49FD35F02A869A0300CC4A12 /* shop  */,
 				4978ACFD2A8B7EF900461E89 /* notification */,
-				65F7C1D72A85146600BBB7FB /* MenuPage.swift */,
+				4978AD002A8CB59C00461E89 /* Menu */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -415,12 +429,14 @@
 				49FD35E42A86200100CC4A12 /* friendsTableViewCell.swift in Sources */,
 				49AE88322A88B8DF0059515C /* productbuyTableViewCell.swift in Sources */,
 				491A5DB02A6F8A100005539D /* createAccount.swift in Sources */,
+				495426492A8CC80C00FAB2DA /* settingsAndPrivacyPage.swift in Sources */,
 				65B1DE732A6CEE540076A401 /* SceneDelegate.swift in Sources */,
 				4928D0D22A8A7F3300EC82A9 /* morepopUp.swift in Sources */,
 				65F7C1DC2A85169100BBB7FB /* postPop.swift in Sources */,
 				498342892A6EE4F000C6413F /* JoinFacebook.swift in Sources */,
 				656DF25A2A7A5B32003A2044 /* forgetPage.swift in Sources */,
 				65F7C1DE2A851B1400BBB7FB /* postTableViewCell.swift in Sources */,
+				495426472A8CB5D300FAB2DA /* menuCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
